@@ -1,0 +1,1 @@
+Just Learning Pythons to be complete my goal are : Ai Research and Development Backend
