@@ -79,7 +79,7 @@ class Library:
 
                 print("book borrowed successfully", book.title)
 
-                return "book borrowed successfully"
+                return f"book borrowed successfully {book.title}"
 
         return "book not found or not available"
 

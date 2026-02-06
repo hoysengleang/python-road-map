@@ -4,7 +4,6 @@ raw_data = [
     {"user_id": 3, "name": "Charlie", "tags": ["admin", "inactive"], "score": 78},
 ]
 
-# Function to filter users by tag
 def filter_users_by_tag(data, tag=[]):
     filtered_users = []
     if not tag or not data or len(tag) == 0:
