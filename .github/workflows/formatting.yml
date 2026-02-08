@@ -1,0 +1,32 @@
+name: Code Formatting Check
+
+on:
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  formatting:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install black
+      run: pip install black
+
+    - name: Check formatting with black
+      run: |
+        black --check --diff src/
+        if [ $? -ne 0 ]; then
+          echo "❌ Code formatting issues found!"
+          echo "Run 'black src/' locally to fix formatting."
+          exit 1
+        else
+          echo "✅ All files are properly formatted!"
+        fi

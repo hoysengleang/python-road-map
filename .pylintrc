@@ -1,0 +1,26 @@
+[MAIN]
+# Files or directories to be skipped
+ignore=venv,env,ENV,.venv
+
+[MESSAGES CONTROL]
+# Disable some checks that are too strict for learning code
+disable=
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    too-few-public-methods,
+    invalid-name
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length=127
+
+[BASIC]
+# Good variable names which should always be accepted
+good-names=i,j,k,ex,Run,_,x,y,z,a,b
+
+[DESIGN]
+# Maximum number of arguments for function / method
+max-args=7
+# Maximum number of locals for function / method body
+max-locals=15

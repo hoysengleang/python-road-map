@@ -1,0 +1,12 @@
+# Python Learning Repository - AI Research and Development Backend
+
+## Development Dependencies
+flake8>=7.0.0
+black>=24.0.0
+pylint>=3.0.0
+pytest>=8.0.0
+pytest-cov>=4.1.0
+bandit>=1.7.0
+pre-commit>=3.6.0
+
+# Add your project dependencies below this line
