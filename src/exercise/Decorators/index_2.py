@@ -4,6 +4,8 @@ from ast import arg
 def decorator(func):
     def wrapper(*args, **kwargs):
         print("The Calculate Function is starting")
+        print(f"The arguments are {args}")
+        print(f"The keyword arguments are {kwargs}")
         result = func(*args, **kwargs)
         print(f"The result is {result}")
         print("The Calculate Function is ending")
@@ -21,9 +23,5 @@ def calculate(a, b):
         return "The numbers are odd"
     print("The Calculate Function is running")
     return a + b
-
-
-
-
 
 calculate(11,20)
